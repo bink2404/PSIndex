@@ -1,0 +1,163 @@
+
+	To do
+	~~~~~
+
+	- Spell check
+	- Printing
+	- Read sort order, ignore chars, range separators read from FM settings.
+
+
+
+
+	To test
+	~~~~~~~
+
+
+
+	Issues to document
+	~~~~~~~~~~~~~~~~~~
+
+	- If marker is in imported text, then find doesn't work properly, which happens in FM too.
+	- Adding/changing markers in demo mode will sometimes not display - only the first 100 are shown.
+	- Update speed will decrease as the book size and marker numbers increase
+	- The marker page is taken from the beginning of the enclosing paragraph
+	- Deleting a marker contained within another (multiple ;'s) will delete all.
+	- Demo mode adding and focus is strange due to limit of markers
+	- Closing a doc in a book will remove that docs markers from the emDEX window
+	- Change marker, press escape, choose yes to make changes will not update emDEX.
+	- Changing options from the tooltray will change all open and subsequent windows.
+	- Find needs fully formatted string
+	- Checking cross-references does an EXACT match on the text following "see" or "see also"
+	- Maximum number of items is 5000 for release version, 100 for demo.
+	- Maximum number of indents displayed for a marker is 5. If there are more, then only the first 5 are 
+          displayed, and clicking on it won't find it.
+	- Maximum number of page references for a marker is 400.
+	- Maximum number of emDEX windows open at a time is 5.
+	- If realtime updating off, markers sometimes cannot be found - need to update first.
+	- Sometimes if formatting is invalid (no closing brace), then find won't work - use FM find.
+	- Installation will only work with Frame 5.5, 5.5.6, 6.0, and 7.0
+
+
+	Done
+	~~~~
+
+	* Tooltray functionality fixed on XP
+	* Fixed background drawing memory leak
+	* Added button text save/load options
+	* Editor font selection
+	* PSIndex entry dialog
+	* Now copes with different extensions, not just .fm and .book
+	* Make sure to delete global atom after use (case sensitivity problems).
+	* Added case sensitivity to Replace option.
+	* Fixed letter-by-letter sort order
+	* Maximise doc if marker found and doc is minimised.
+	* Changed focus setting in doFind() to fix problem in structured FM
+	* Get delete confirmation if marker contained within a text inset	
+	* Don't update included marker types if real-time turned off.
+	* Added page range separator text option
+	* Keep range entry dialog displayed if no text entered
+	* Test on other versions of Windows
+		Done 98, ME, NT, XP, 2K
+	* Option to keep emDEX windows on top
+	* Added help file and a link from the FM menu
+	* Restrict use to FM 5.5*, 6.0, and 7.0
+	* Fixed bug when deleting range containing ';' in a single doc (deleted start and end)
+	* Improved speed of "include types" dialog
+	* Speeded-up window updating when real-time turned off.	
+	* Cope with the same marker text appearing on A1, 1-1, 1 etc.
+	* Fix crash when inserting blank marker into large empty region.
+	* Cope with chapter numbers etc. displayed in index (A-4, IV-5 etc.)
+	* Cope with Roman and alphabetic page numbers.
+	* Wise installation.
+	* Read hard-coded locations from the registry.	
+	* Cope with nopage and singlepage in the same marker
+	* Blank marker text when first character is a space causes an exception
+	* Keeping the delete key pressed causes an exception
+	* </> should mimic </Default Para Font>
+	* Cope with \<, \>, \[, \] characters
+	* Cope with > at end of a marker
+	* Check special character display
+	* Blank markers should take text up to a space or non-alphanumeric.
+	* Check [] sorting
+	* Cope with multiple entries, one of which is <$nopage>
+	* Pressing enter from various dialogs and menus shouldn't open the marker window.
+	* Range markers separated by ;'s should all be ranges (e.g. <$startrange>a test;and another test)
+	* Sort order option
+	* Range marker entry should have type selection drop-down too
+	* Different spaces in indented items.
+	* Document changed when just opening it
+	* Blank lines sometimes appear at the end of the listbox (book DEMO)
+	* Don't automatically open marker window for blank markers
+	* Unknown format tags and ranges - can't find the marker in another doc in the book
+	* Window sometimes starts empty
+	* Uppercase / lowercase sorting (including indented)
+	* Characters to ignore option
+	* DDEML.DLL error in Windows ME
+	* Find the first item when catcher window is created.
+	* Focus selection after deleting (especially in demo mode)
+	* Page number formatting takes previous formatting too.
+	* Set the maximum number of catcher windows.
+	* Formatted text is sorted differently
+	* Initial catcher window flickers on init.
+	* Test with FM v7.0
+	* Number format ordering, selection, and formatting
+	* Selection sometimes picks wrong type, such as Subject
+	* Clicking on an item in the listbox should always find the correct marker.
+	* Double-clicking sometimes locks catcher window
+	* Double-clicking in a single document finding the second occurrence
+	* Find the correct marker when finding orphan ranges from menu
+	* Window positioning/size option
+	* Audio/visual options for orphan range alerts
+	* Start/stop the tooltray server window with Frame
+	* Cope with <$singlepage> tag
+	* Rename components "client" and "server" to distinguish them
+	* Cross-reference check should also cope with "Tests, see also Testing" etc.
+	* Option for real-time updates.
+	* Make sure that files are not minimized when a book is opened.
+	* Blank markers to take the next word text
+	* Save include type options to the ini file
+	* Check cross-references
+	* Cope with \: and \; etc.
+	* Exiting the tooltray server should also kill all catcher windows
+	* Disregard spaces where necessary
+	* Cope with malformed tags (e.g. starting [ without a ])
+	* Cope with escape sequences in marker text
+	* Cope with []'s to change the sorting order
+	* Some characters display strangely (CR etc.)
+	* Cope with range markers
+	* Check for deletion of range markers.	
+	* Cope with BoldItalic font
+	* Page number formatting
+	* Resize listbox item height after font changed.
+	* Find sometimes doesn't work with multiple catcher windows open.
+	* Rename to Emdex
+	* Listbox positioning after update.
+	* Pressing enter to access menu items
+	* Start find/delete from beginning of doc.
+	* Exact find in listbox.
+	* Be able to edit/view any one of multiple entries.
+	* Global replace option.
+	* Global find option.
+	* Selection highlighting.
+	* Font/background colour selection dialogs for catcher window.
+	* Text formatting
+	* Check the formatting of other marker types
+	* Opening a member of an active book should update the catcher
+	* Horizontal scroll bar in catcher listbox
+	* Cope with multiple :'s	
+	* Cope with various formatting tags in markers
+	* Enable find/delete from a book catcher window.
+	* Cope with multiple ;'s	
+	* Undo changes after closing doc without saving.
+	* Merge index for a book ?
+	* Cope with IXGen markers - need to collapse markers.
+	* Changing case of entries
+	* Entries with or without spaces.
+	* Have a catcher tray icon.
+	* Edit option.
+	* Move back to position in listbox after updating.
+	* Have a list of selectable marker types to display.
+	* Display of special characters (')
+	* Deletion of main item which has sub-items.
+	* DDE to send back changes from catcher window.
+

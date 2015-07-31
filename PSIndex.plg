@@ -1,0 +1,90 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: pickfmts - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating command line "rc.exe /l 0x409 /fo"release/multipic.res" /d "_DEBUG" "C:\cpp\PSIndex\multipic.rc"" 
+Creating temporary file "d:\data\813077~1\LOCALS~1\Temp\RSP5C5.tmp" with contents
+[
+/nologo /ML /Gm /GX /ZI /Od /I "C:\Program Files\Adobe\fdk8\include" /I "c:\cpp\PSIndexCatcher" /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_MBCS" /D "_USRDLL" /D "PICKFMTS_EXPORTS" /Fp"release/PSIndex.pch" /YX /Fo"release/" /Fd"release/" /FD /GZ /c 
+"C:\cpp\PSIndex\cutils.c"
+"C:\cpp\PSIndex\PSIndex.c"
+"C:\cpp\PSIndex\utils.c"
+]
+Creating command line "cl.exe @d:\data\813077~1\LOCALS~1\Temp\RSP5C5.tmp" 
+Creating temporary file "d:\data\813077~1\LOCALS~1\Temp\RSP5C6.tmp" with contents
+[
+kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib fdk.lib api.lib fmdbms32.lib MSVCRT.LIB /nologo /dll /incremental:yes /pdb:"release/emDEX.pdb" /debug /machine:I386 /out:"release/emDEX.dll" /implib:"release/emDEX.lib" /pdbtype:sept /libpath:"C:\Program Files\Adobe\FDK8\lib" /section:.rsrc,w 
+.\release\cutils.obj
+.\release\PSIndex.obj
+.\release\utils.obj
+.\release\multipic.res
+]
+Creating command line "link.exe @d:\data\813077~1\LOCALS~1\Temp\RSP5C6.tmp"
+<h3>Output Window</h3>
+Compiling resources...
+Compiling...
+cutils.c
+PSIndex.c
+c:\cpp\psindex\psindex.c(2534) : warning C4028: formal parameter 1 different from declaration
+c:\cpp\psindex\psindex.c(2534) : warning C4028: formal parameter 2 different from declaration
+c:\cpp\psindex\psindex.c(2534) : warning C4024: 'F_StrListSort' : different types for formal and actual parameter 2
+c:\cpp\psindex\psindex.c(2560) : warning C4028: formal parameter 1 different from declaration
+c:\cpp\psindex\psindex.c(2560) : warning C4028: formal parameter 2 different from declaration
+c:\cpp\psindex\psindex.c(2560) : warning C4024: 'F_StrListSort' : different types for formal and actual parameter 2
+c:\cpp\psindex\psindex.c(5587) : warning C4028: formal parameter 1 different from declaration
+c:\cpp\psindex\psindex.c(5587) : warning C4028: formal parameter 2 different from declaration
+c:\cpp\psindex\psindex.c(5587) : warning C4024: 'F_StrListSort' : different types for formal and actual parameter 2
+utils.c
+Linking...
+LIBCMT.lib(crt0init.obj) : error LNK2005: ___xc_z already defined in MSVCRT.LIB(cinitexe.obj)
+LIBCMT.lib(crt0init.obj) : error LNK2005: ___xc_a already defined in MSVCRT.LIB(cinitexe.obj)
+LIBCMT.lib(crt0init.obj) : error LNK2005: ___xi_z already defined in MSVCRT.LIB(cinitexe.obj)
+LIBCMT.lib(crt0init.obj) : error LNK2005: ___xi_a already defined in MSVCRT.LIB(cinitexe.obj)
+LIBCMT.lib(crt0init.obj) : warning LNK4006: ___xc_z already defined in MSVCRT.LIB(cinitexe.obj); second definition ignored
+LIBCMT.lib(crt0init.obj) : warning LNK4006: ___xc_a already defined in MSVCRT.LIB(cinitexe.obj); second definition ignored
+LIBCMT.lib(crt0init.obj) : warning LNK4006: ___xi_z already defined in MSVCRT.LIB(cinitexe.obj); second definition ignored
+LIBCMT.lib(crt0init.obj) : warning LNK4006: ___xi_a already defined in MSVCRT.LIB(cinitexe.obj); second definition ignored
+   Creating library release/emDEX.lib and object release/emDEX.exp
+LINK : warning LNK4098: defaultlib "LIBC" conflicts with use of other libs; use /NODEFAULTLIB:library
+LINK : warning LNK4098: defaultlib "LIBCMT" conflicts with use of other libs; use /NODEFAULTLIB:library
+api.lib(apisimple.obj) : error LNK2001: unresolved external symbol ___security_cookie
+fdk.lib(pathname.obj) : error LNK2001: unresolved external symbol ___security_cookie
+fdk.lib(filename.obj) : error LNK2001: unresolved external symbol ___security_cookie
+fdk.lib(ioutils.obj) : error LNK2001: unresolved external symbol ___security_cookie
+api.lib(apiclib.obj) : error LNK2001: unresolved external symbol ___security_cookie
+fdk.lib(wildfld.obj) : error LNK2001: unresolved external symbol ___security_cookie
+fdk.lib(channel.obj) : error LNK2001: unresolved external symbol ___security_cookie
+fdk.lib(utfconv.obj) : error LNK2001: unresolved external symbol ___security_cookie
+fdk.lib(utils.obj) : error LNK2001: unresolved external symbol ___security_cookie
+fdk.lib(strings.obj) : error LNK2001: unresolved external symbol ___security_cookie
+fdk.lib(print.obj) : error LNK2001: unresolved external symbol ___security_cookie
+fdk.lib(charmaps.obj) : error LNK2001: unresolved external symbol ___security_cookie
+fdk.lib(encstr.obj) : error LNK2001: unresolved external symbol ___security_cookie
+api.lib(apisimple.obj) : error LNK2001: unresolved external symbol @__security_check_cookie@4
+fdk.lib(pathname.obj) : error LNK2001: unresolved external symbol @__security_check_cookie@4
+fdk.lib(filename.obj) : error LNK2001: unresolved external symbol @__security_check_cookie@4
+fdk.lib(ioutils.obj) : error LNK2001: unresolved external symbol @__security_check_cookie@4
+api.lib(apiclib.obj) : error LNK2001: unresolved external symbol @__security_check_cookie@4
+fdk.lib(wildfld.obj) : error LNK2001: unresolved external symbol @__security_check_cookie@4
+fdk.lib(channel.obj) : error LNK2001: unresolved external symbol @__security_check_cookie@4
+fdk.lib(utfconv.obj) : error LNK2001: unresolved external symbol @__security_check_cookie@4
+fdk.lib(utils.obj) : error LNK2001: unresolved external symbol @__security_check_cookie@4
+fdk.lib(strings.obj) : error LNK2001: unresolved external symbol @__security_check_cookie@4
+fdk.lib(print.obj) : error LNK2001: unresolved external symbol @__security_check_cookie@4
+fdk.lib(charmaps.obj) : error LNK2001: unresolved external symbol @__security_check_cookie@4
+fdk.lib(encstr.obj) : error LNK2001: unresolved external symbol @__security_check_cookie@4
+fdk.lib(metrics.obj) : error LNK2001: unresolved external symbol __ftol2_sse
+release/emDEX.dll : fatal error LNK1120: 3 unresolved externals
+Error executing link.exe.
+
+
+
+<h3>Results</h3>
+emDEX.dll - 32 error(s), 15 warning(s)
+</pre>
+</body>
+</html>

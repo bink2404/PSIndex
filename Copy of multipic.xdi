@@ -1,0 +1,129 @@
+//-------------------------------------------------------------------
+// Source filename:      C:\FMSDK7\Samples\Win\pickfmts\multipic.dre
+// Date generated:       Wed Dec 19 15:42:48 2001
+//-------------------------------------------------------------------
+
+include 500 // DB_DBRE_INFO resource
+BEGIN
+	/* okbutton      */ 5,
+	/* cancelbutton  */ 6,
+	/* defaultbutton */ 5,
+	/* num           */ 11,
+	/* firstfocus    */ -1,
+	/* filenum       */ -1,
+	/* filetbx       */ -1,
+	/* filesbx       */ -1,
+	/* filelabel     */ -1,
+	/* helpbutton    */ 7,
+	/* titlelabel    */ 0,
+    /* button1       */ -1,
+	/* hypertextHelp */ "clnthelp:dbre template\0",
+
+	//       id      type    active     stuff    hypertextHelp
+	// --------  --------  --------  --------  ---------------
+	        100,        3,        0,        2, "-1\0",
+	        101,        8,        0,       -1, "clnthelp:button\0",
+	        102,        2,        0,        0, "clnthelp:button\0",
+	        103,        8,        0,       -1, "clnthelp:button\0",
+	        104,        2,        0,        0, "clnthelp:button\0",
+	        105,        2,        0,        0, "clnthelp:button\0",
+	        106,        2,        0,        0, "clnthelp:button\0",
+	        107,        2,        0,        0, "clnthelp:button\0",
+	        108,        4,        0,        0, "-1\0",
+	        109,        1,        0,        0, "-1\0",
+	        110,        4,        0,        0, "-1\0",
+			111,        4,        0,        0, "-1\0",
+			112,        4,        0,        0, "-1\0",
+			113,        4,        0,        0, "-1\0",
+			114,        4,        0,        0, "-1\0",
+			115,        4,        0,        0, "-1\0",
+			116,        4,        0,        0, "-1\0",
+			117,        4,        0,        0, "-1\0",
+			118,        4,        0,        0, "-1\0",
+			119,        4,        0,        0, "-1\0",
+			120,        4,        0,        0, "-1\0"
+END
+
+range 500 // DB_DBRE_INFO resource
+BEGIN
+	/* okbutton      */ 5,
+	/* cancelbutton  */ 6,
+	/* defaultbutton */ 5,
+	/* num           */ 22,
+	/* firstfocus    */ -1,
+	/* filenum       */ -1,
+	/* filetbx       */ -1,
+	/* filesbx       */ -1,
+	/* filelabel     */ -1,
+	/* helpbutton    */ 7,
+	/* titlelabel    */ 0,
+	/* hypertextHelp */ "clnthelp:dbre template\0",
+
+	//       id      type    active     stuff    hypertextHelp
+	// --------  --------  --------  --------  ---------------
+	        100,        4,        0,        0, "-1\0",
+		    101,        9,        0,       -1, "clnthelp:edit box\0",
+	        102,        2,        0,        0, "clnthelp:button\0",
+	        103,        8,        0,       -1, "clnthelp:button\0",
+	        104,        2,        0,        0, "clnthelp:button\0",
+	        105,        2,        0,        0, "clnthelp:button\0",
+	        106,        2,        0,        0, "clnthelp:button\0",
+	        107,        2,        0,        0, "clnthelp:button\0",
+	        108,        4,        0,        0, "-1\0",
+	        109,        1,        0,        0, "-1\0",
+	        110,        4,        0,        0, "-1\0",
+			111,        2,        0,        0, "clnthelp:button\0",
+			112,        2,        0,        0, "clnthelp:button\0",
+			113,        2,        0,        0, "clnthelp:button\0",
+			114,        2,        0,        0, "clnthelp:button\0",
+			115,        2,        0,        0, "clnthelp:button\0",
+			116,        2,        0,        0, "clnthelp:button\0",
+			117,        2,        0,        0, "clnthelp:button\0",
+			118,        2,        0,        0, "clnthelp:button\0",
+			119,        2,        0,        0, "clnthelp:button\0",
+			120,        2,        0,        0, "clnthelp:button\0"
+			121,        2,        0,        0, "clnthelp:button\0"
+END
+
+marker 500 // DB_DBRE_INFO resource
+BEGIN
+	/* okbutton      */ 5,
+	/* cancelbutton  */ 6,
+	/* defaultbutton */ 5,
+	/* num           */ 22,
+	/* firstfocus    */ -1,
+	/* filenum       */ -1,
+	/* filetbx       */ -1,
+	/* filesbx       */ -1,
+	/* filelabel     */ -1,
+	/* helpbutton    */ 7,
+	/* titlelabel    */ 0,
+	/* hypertextHelp */ "clnthelp:dbre template\0",
+
+	//       id      type    active     stuff    hypertextHelp
+	// --------  --------  --------  --------  ---------------
+	        100,        4,        0,        0, "-1\0",
+		    101,        9,        0,       -1, "clnthelp:edit box\0",
+	        102,        2,        0,        0, "clnthelp:button\0",
+	        103,        8,        0,       -1, "clnthelp:button\0",
+	        104,        2,        0,        0, "clnthelp:button\0",
+	        105,        2,        0,        0, "clnthelp:button\0",
+	        106,        2,        0,        0, "clnthelp:button\0",
+	        107,        2,        0,        0, "clnthelp:button\0",
+	        108,        4,        0,        0, "-1\0",
+	        109,        1,        0,        0, "-1\0",
+	        110,        4,        0,        0, "-1\0",
+			111,        2,        0,        0, "clnthelp:button\0",
+			112,        2,        0,        0, "clnthelp:button\0",
+			113,        2,        0,        0, "clnthelp:button\0",
+			114,        2,        0,        0, "clnthelp:button\0",
+			115,        2,        0,        0, "clnthelp:button\0",
+			116,        2,        0,        0, "clnthelp:button\0",
+			117,        2,        0,        0, "clnthelp:button\0",
+			118,        2,        0,        0, "clnthelp:button\0",
+			119,        2,        0,        0, "clnthelp:button\0",
+			120,        2,        0,        0, "clnthelp:button\0"
+			121,        2,        0,        0, "clnthelp:button\0"
+END
+
+
